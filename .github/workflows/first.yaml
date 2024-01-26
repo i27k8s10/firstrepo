@@ -4,6 +4,8 @@ jobs:
   first_job: # Name of the Job 
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Rrpo
+        uses: actions/checkout@v4
       - name: Welcome Message
         run: echo "Hello World!"
       - name: List Files
